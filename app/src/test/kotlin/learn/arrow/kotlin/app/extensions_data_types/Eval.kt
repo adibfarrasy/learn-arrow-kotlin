@@ -3,7 +3,7 @@ package learn.arrow.kotlin.app.extensions_data_types
 import arrow.core.Eval
 import org.junit.jupiter.api.Test
 
-class EvalT {
+class Eval {
     private fun even(n: Int): Eval<Boolean> =
         Eval.always { n == 0 }.flatMap {
             if (it) Eval.now(true)
